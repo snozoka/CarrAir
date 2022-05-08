@@ -1,0 +1,275 @@
+# this is an auto generated file. This will be overwritten
+query GetItemsSent($id: ID!) {
+  getItemsSent(id: $id) {
+    id
+    itemSent
+    flightsID
+    _version
+    _deleted
+    _lastChangedAt
+    createdAt
+    updatedAt
+  }
+}
+query ListItemsSents(
+  $filter: ModelItemsSentFilterInput
+  $limit: Int
+  $nextToken: String
+) {
+  listItemsSents(filter: $filter, limit: $limit, nextToken: $nextToken) {
+    items {
+      id
+      itemSent
+      flightsID
+      _version
+      _deleted
+      _lastChangedAt
+      createdAt
+      updatedAt
+    }
+    nextToken
+    startedAt
+  }
+}
+query SyncItemsSents(
+  $filter: ModelItemsSentFilterInput
+  $limit: Int
+  $nextToken: String
+  $lastSync: AWSTimestamp
+) {
+  syncItemsSents(
+    filter: $filter
+    limit: $limit
+    nextToken: $nextToken
+    lastSync: $lastSync
+  ) {
+    items {
+      id
+      itemSent
+      flightsID
+      _version
+      _deleted
+      _lastChangedAt
+      createdAt
+      updatedAt
+    }
+    nextToken
+    startedAt
+  }
+}
+query GetFlights($id: ID!) {
+  getFlights(id: $id) {
+    id
+    from_destination
+    to_destination
+    flyerID
+    senderID
+    flight_number
+    flight_start_date
+    flight_end_date
+    number_of_luggage_sent
+    _version
+    _deleted
+    _lastChangedAt
+    createdAt
+    updatedAt
+    ItemsSentsOnFlights {
+      nextToken
+      startedAt
+    }
+  }
+}
+query ListFlightss(
+  $filter: ModelFlightsFilterInput
+  $limit: Int
+  $nextToken: String
+) {
+  listFlightss(filter: $filter, limit: $limit, nextToken: $nextToken) {
+    items {
+      id
+      from_destination
+      to_destination
+      flyerID
+      senderID
+      flight_number
+      flight_start_date
+      flight_end_date
+      number_of_luggage_sent
+      _version
+      _deleted
+      _lastChangedAt
+      createdAt
+      updatedAt
+    }
+    nextToken
+    startedAt
+  }
+}
+query SyncFlights(
+  $filter: ModelFlightsFilterInput
+  $limit: Int
+  $nextToken: String
+  $lastSync: AWSTimestamp
+) {
+  syncFlights(
+    filter: $filter
+    limit: $limit
+    nextToken: $nextToken
+    lastSync: $lastSync
+  ) {
+    items {
+      id
+      from_destination
+      to_destination
+      flyerID
+      senderID
+      flight_number
+      flight_start_date
+      flight_end_date
+      number_of_luggage_sent
+      _version
+      _deleted
+      _lastChangedAt
+      createdAt
+      updatedAt
+    }
+    nextToken
+    startedAt
+  }
+}
+query GetFlyer($id: ID!) {
+  getFlyer(id: $id) {
+    id
+    firstName
+    Address
+    KnownTravelerNumber
+    lastName
+    _version
+    _deleted
+    _lastChangedAt
+    createdAt
+    updatedAt
+    Flyer_to_flights {
+      nextToken
+      startedAt
+    }
+  }
+}
+query ListFlyers(
+  $filter: ModelFlyerFilterInput
+  $limit: Int
+  $nextToken: String
+) {
+  listFlyers(filter: $filter, limit: $limit, nextToken: $nextToken) {
+    items {
+      id
+      firstName
+      Address
+      KnownTravelerNumber
+      lastName
+      _version
+      _deleted
+      _lastChangedAt
+      createdAt
+      updatedAt
+    }
+    nextToken
+    startedAt
+  }
+}
+query SyncFlyers(
+  $filter: ModelFlyerFilterInput
+  $limit: Int
+  $nextToken: String
+  $lastSync: AWSTimestamp
+) {
+  syncFlyers(
+    filter: $filter
+    limit: $limit
+    nextToken: $nextToken
+    lastSync: $lastSync
+  ) {
+    items {
+      id
+      firstName
+      Address
+      KnownTravelerNumber
+      lastName
+      _version
+      _deleted
+      _lastChangedAt
+      createdAt
+      updatedAt
+    }
+    nextToken
+    startedAt
+  }
+}
+query GetSender($id: ID!) {
+  getSender(id: $id) {
+    id
+    firstName
+    Address
+    KnownTravelerNumber
+    lastName
+    _version
+    _deleted
+    _lastChangedAt
+    createdAt
+    updatedAt
+    Sender_to_flights {
+      nextToken
+      startedAt
+    }
+  }
+}
+query ListSenders(
+  $filter: ModelSenderFilterInput
+  $limit: Int
+  $nextToken: String
+) {
+  listSenders(filter: $filter, limit: $limit, nextToken: $nextToken) {
+    items {
+      id
+      firstName
+      Address
+      KnownTravelerNumber
+      lastName
+      _version
+      _deleted
+      _lastChangedAt
+      createdAt
+      updatedAt
+    }
+    nextToken
+    startedAt
+  }
+}
+query SyncSenders(
+  $filter: ModelSenderFilterInput
+  $limit: Int
+  $nextToken: String
+  $lastSync: AWSTimestamp
+) {
+  syncSenders(
+    filter: $filter
+    limit: $limit
+    nextToken: $nextToken
+    lastSync: $lastSync
+  ) {
+    items {
+      id
+      firstName
+      Address
+      KnownTravelerNumber
+      lastName
+      _version
+      _deleted
+      _lastChangedAt
+      createdAt
+      updatedAt
+    }
+    nextToken
+    startedAt
+  }
+}

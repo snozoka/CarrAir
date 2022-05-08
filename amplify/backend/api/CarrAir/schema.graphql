@@ -1,0 +1,36 @@
+type ItemsSent @model @auth(rules: [{allow: public}]) @key(name: "byFlights", fields: ["flightsID"]) {
+  id: ID!
+  itemSent: [String!]
+  flightsID: ID!
+}
+
+type Flights @model @auth(rules: [{allow: public}]) @key(name: "byFlyer", fields: ["flyerID"]) @key(name: "bySender", fields: ["senderID"]) {
+  id: ID!
+  from_destination: String!
+  to_destination: String!
+  flyerID: ID!
+  senderID: ID!
+  flight_number: String!
+  ItemsSentsOnFlights: [ItemsSent] @connection(keyName: "byFlights", fields: ["id"])
+  flight_start_date: AWSDateTime!
+  flight_end_date: AWSDateTime!
+  number_of_luggage_sent: Int!
+}
+
+type Flyer @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  firstName: String!
+  Address: String
+  KnownTravelerNumber: String
+  Flyer_to_flights: [Flights] @connection(keyName: "byFlyer", fields: ["id"])
+  lastName: String!
+}
+
+type Sender @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  firstName: String!
+  Address: String!
+  KnownTravelerNumber: String
+  Sender_to_flights: [Flights] @connection(keyName: "bySender", fields: ["id"])
+  lastName: String!
+}

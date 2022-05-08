@@ -1,0 +1,45 @@
+{
+  "paths": [
+    {
+      "name": "/items",
+      "lambdaFunction": "carrair397a79f9",
+      "privacy": {
+        "protected": true,
+        "auth": [
+          "/POST",
+          "/GET",
+          "/PUT",
+          "/PATCH",
+          "/DELETE"
+        ],
+        "unauth": [
+          "/GET"
+        ]
+      },
+      "policyResourceName": "/items"
+    }
+  ],
+  "resourceName": "api294379f6",
+  "apiName": "api294379f6",
+  "functionArns": [
+    {
+      "lambdaFunction": "carrair397a79f9"
+    }
+  ],
+  "privacy": {
+    "auth": 1,
+    "unauth": 1,
+    "authRoleName": "amplify-carrair-staging-224502-authRole",
+    "unAuthRoleName": "amplify-carrair-staging-224502-unauthRole"
+  },
+  "dependsOn": [
+    {
+      "category": "function",
+      "resourceName": "carrair397a79f9",
+      "attributes": [
+        "Name",
+        "Arn"
+      ]
+    }
+  ]
+}

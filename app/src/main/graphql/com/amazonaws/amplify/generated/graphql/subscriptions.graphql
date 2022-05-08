@@ -1,0 +1,211 @@
+# this is an auto generated file. This will be overwritten
+subscription OnCreateItemsSent {
+  onCreateItemsSent {
+    id
+    itemSent
+    flightsID
+    _version
+    _deleted
+    _lastChangedAt
+    createdAt
+    updatedAt
+  }
+}
+subscription OnUpdateItemsSent {
+  onUpdateItemsSent {
+    id
+    itemSent
+    flightsID
+    _version
+    _deleted
+    _lastChangedAt
+    createdAt
+    updatedAt
+  }
+}
+subscription OnDeleteItemsSent {
+  onDeleteItemsSent {
+    id
+    itemSent
+    flightsID
+    _version
+    _deleted
+    _lastChangedAt
+    createdAt
+    updatedAt
+  }
+}
+subscription OnCreateFlights {
+  onCreateFlights {
+    id
+    from_destination
+    to_destination
+    flyerID
+    senderID
+    flight_number
+    flight_start_date
+    flight_end_date
+    number_of_luggage_sent
+    _version
+    _deleted
+    _lastChangedAt
+    createdAt
+    updatedAt
+    ItemsSentsOnFlights {
+      nextToken
+      startedAt
+    }
+  }
+}
+subscription OnUpdateFlights {
+  onUpdateFlights {
+    id
+    from_destination
+    to_destination
+    flyerID
+    senderID
+    flight_number
+    flight_start_date
+    flight_end_date
+    number_of_luggage_sent
+    _version
+    _deleted
+    _lastChangedAt
+    createdAt
+    updatedAt
+    ItemsSentsOnFlights {
+      nextToken
+      startedAt
+    }
+  }
+}
+subscription OnDeleteFlights {
+  onDeleteFlights {
+    id
+    from_destination
+    to_destination
+    flyerID
+    senderID
+    flight_number
+    flight_start_date
+    flight_end_date
+    number_of_luggage_sent
+    _version
+    _deleted
+    _lastChangedAt
+    createdAt
+    updatedAt
+    ItemsSentsOnFlights {
+      nextToken
+      startedAt
+    }
+  }
+}
+subscription OnCreateFlyer {
+  onCreateFlyer {
+    id
+    firstName
+    Address
+    KnownTravelerNumber
+    lastName
+    _version
+    _deleted
+    _lastChangedAt
+    createdAt
+    updatedAt
+    Flyer_to_flights {
+      nextToken
+      startedAt
+    }
+  }
+}
+subscription OnUpdateFlyer {
+  onUpdateFlyer {
+    id
+    firstName
+    Address
+    KnownTravelerNumber
+    lastName
+    _version
+    _deleted
+    _lastChangedAt
+    createdAt
+    updatedAt
+    Flyer_to_flights {
+      nextToken
+      startedAt
+    }
+  }
+}
+subscription OnDeleteFlyer {
+  onDeleteFlyer {
+    id
+    firstName
+    Address
+    KnownTravelerNumber
+    lastName
+    _version
+    _deleted
+    _lastChangedAt
+    createdAt
+    updatedAt
+    Flyer_to_flights {
+      nextToken
+      startedAt
+    }
+  }
+}
+subscription OnCreateSender {
+  onCreateSender {
+    id
+    firstName
+    Address
+    KnownTravelerNumber
+    lastName
+    _version
+    _deleted
+    _lastChangedAt
+    createdAt
+    updatedAt
+    Sender_to_flights {
+      nextToken
+      startedAt
+    }
+  }
+}
+subscription OnUpdateSender {
+  onUpdateSender {
+    id
+    firstName
+    Address
+    KnownTravelerNumber
+    lastName
+    _version
+    _deleted
+    _lastChangedAt
+    createdAt
+    updatedAt
+    Sender_to_flights {
+      nextToken
+      startedAt
+    }
+  }
+}
+subscription OnDeleteSender {
+  onDeleteSender {
+    id
+    firstName
+    Address
+    KnownTravelerNumber
+    lastName
+    _version
+    _deleted
+    _lastChangedAt
+    createdAt
+    updatedAt
+    Sender_to_flights {
+      nextToken
+      startedAt
+    }
+  }
+}

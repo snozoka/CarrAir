@@ -1,0 +1,24 @@
+{
+  "staging": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-carrair-staging-224502-authRole",
+      "UnauthRoleArn": "arn:aws:iam::610201369322:role/amplify-carrair-staging-224502-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::610201369322:role/amplify-carrair-staging-224502-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-carrair-staging-224502-deployment",
+      "UnauthRoleName": "amplify-carrair-staging-224502-unauthRole",
+      "StackName": "amplify-carrair-staging-224502",
+      "StackId": "arn:aws:cloudformation:us-east-1:610201369322:stack/amplify-carrair-staging-224502/b3909690-2ed2-11ec-a0b2-0e753b2bd793",
+      "AmplifyAppId": "d29s7nn4g1q09o"
+    },
+    "categories": {
+      "auth": {
+        "carrair5b8e39b3": {},
+        "CarrAir": {}
+      },
+      "function": {
+        "carrair397a79f9": {}
+      }
+    }
+  }
+}
